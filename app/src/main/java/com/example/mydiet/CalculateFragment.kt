@@ -38,7 +38,6 @@ class CalculateFragment : Fragment() {
 
         // Inflate the layout for this fragment
         var root = inflater.inflate(R.layout.fragment_calculate, container, false)
-
         feet = root.findViewById(R.id.edit_ft)
         inches = root.findViewById(R.id.edit_inches)
         weight = root.findViewById(R.id.edit_weight)
@@ -48,11 +47,11 @@ class CalculateFragment : Fragment() {
         calculate = root.findViewById(R.id.btncalculate)
 
 
+
         calculate.setOnClickListener {
             root.findNavController().navigate(R.id.action_calculateFragment2_to_resultFragment)
             //calculateBMIFunction()
             //calculateBMR()
-          var feet = edit_ft.text.toString().toFloat()
 
 
 
